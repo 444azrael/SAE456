@@ -225,3 +225,11 @@ body.transparent-navbar-padding {
 .underline {
   text-decoration: underline;
 }
+
+/*regler la taille des images du carousel*/
+.carousel-size{
+  max-width:50%;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+}
