@@ -203,6 +203,10 @@ body.transparent-navbar-padding {
 .textebienvenue{
   margin-left: 4%;
 }
+.bordure{
+    border: 2px solid black;
+    padding: 5%;
+}
 
 
 /*partie de raf*/
