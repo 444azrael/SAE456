@@ -1,0 +1,223 @@
+/* Votre CSS personnalisé */
+
+/* Reset Tool CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #f2f2f2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* fin du reset */
+
+h2 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: justify;
+}
+
+body {
+    background-color: rgb(52 , 58 ,64);
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+html, body {
+  background: transparent;
+}
+
+header {
+  position: relative;
+  color: #ffff;
+}
+
+body{
+  background-color :#333;
+  color: #fff;
+}
+
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.header-logo {
+  height: 40px; /* Ajustez la hauteur selon vos besoins */
+  margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+.brand-text {
+  display: inline-block;
+  position: relative;
+  top: -10px;  
+}
+
+/* Ajout de styles pour le header fixe */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assurez-vous que le header est au-dessus de tout le reste */
+  background-color: rgba(255, 255, 255, 0.9); /* Couleur de fond semi-transparente */
+}
+
+
+
+.parallax {
+    background-image: url('background-image.jpg'); /* Remplacez par le chemin de votre image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px; /* Ajustez selon vos besoins */
+}
+
+
+.parallax-header {
+  background-image: url('background-image.jpg'); /* Remplacez par le chemin de votre image */
+  background-attachment: fixed;
+  background-position: top center; /* Modification de la position à top center */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px; /* Ajustez selon vos besoins */
+  margin-bottom: 0; /* Ajustez selon vos besoins, en supprimant la marge basse */
+}
+
+
+/* Modification de l'effet de la barre de navigation (transparent tout en haut et opaque le reste) */
+.navbar.fixed-top {
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur de fond totalement transparente une fois fixée en haut */
+}
+
+.blue-border {
+    border: blue solid 2px;
+    padding: 5px;
+    margin: 0.5px;
+    background-color: #ccebff;
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+    background-color: #333;
+    color: #fff; 
+}
+
+.navbar-nav{
+  padding-right:20px ;
+}
+
+.navbar.transparent-bg {
+  background-color: transparent !important; /* Fond transparent quand la classe transparent-bg est présente */
+  box-shadow: none !important; /* Suppression de l'ombre de la barre de navigation transparente */
+}
+
+/* Ajout d'une marge au contenu pour éviter le chevauchement avec la barre de navigation transparente */
+body.transparent-navbar-padding {
+  margin-top: 56px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+}
+
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #313030;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* S'assurer que le footer est en-dessous du contenu */
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.footer-content h4 {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Ajout de styles pour le sous-menu */
+.dropdown-menu {
+  text-align: left; /* Aligner le texte à gauche */
+  padding-right: 20px; /* Ajouter un padding-right pour décaler le texte du sous-menu */
+}
+
+/* Ajout de styles pour le sous-menu */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Affiche le sous-menu lorsque la souris survole l'élément parent */
+}
+
+/* Ajout de styles pour les éléments du sous-menu */
+.dropdown-menu .dropdown-item {
+  padding: 8px 16px; /* Ajuster le padding des éléments du sous-menu */
+}
+
+/*image responsive*/
+.responsive-image{
+  max-width: 100%;
+  display: flex;
+  /*object-fit:fill; au cas où*/
+}
+
+.textebienvenue{
+  margin-left: 4%;
+}
+
+
+/*partie de raf*/
+
+/* style pour la signature de chaque étudiant*/
+.student-signature {
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+}
+
+
+
+
+/*  */
+.underline {
+  text-decoration: underline;
+}
