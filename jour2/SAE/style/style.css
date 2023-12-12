@@ -113,14 +113,17 @@ header h1 {
 }
 
 .parallax-header {
-  background-image: url('background-image.jpg');
+  background-image: url('images.png'); /* Ajoutez le chemin correct vers votre image */
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  margin-bottom: 0;
+  color: white; /* Assurez-vous que le texte est lisible sur l'image de fond */
+  padding: 50px; /* Ajoutez un padding pour espacer le texte de l'image de fond */
+  text-align: center; /* Centrez le texte */
 }
+
+
 
 .navbar.fixed-top {
   background-color: rgba(255, 255, 255, 0.5);
@@ -139,12 +142,12 @@ header h1 {
   color: #fff;
 }
 
-.connexion {
-  color: red !important;
-}
-
 .navbar-nav {
   padding-right: 20px;
+}
+
+.connexion {
+  color: red !important;
 }
 
 .navbar.transparent-bg {
@@ -222,4 +225,3 @@ body.transparent-navbar-padding {
   margin-right: auto;
   margin-left: auto;
 }
-
