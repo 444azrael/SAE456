@@ -207,6 +207,10 @@ body.transparent-navbar-padding {
   text-decoration: underline;
 }
 
+.noir{
+  color: black;
+}
+
 /*regler la taille des images du carousel*/
 .carousel-size{
   max-width:50%;
