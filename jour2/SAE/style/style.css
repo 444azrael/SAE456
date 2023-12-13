@@ -220,7 +220,7 @@ body.transparent-navbar-padding {
 
 /*regler la taille des images du carousel*/
 .carousel-size{
-  max-width:50%;
+  max-width:80%;
   display:block;
   margin-right: auto;
   margin-left: auto;
@@ -230,5 +230,49 @@ h3 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
+}
+
+.mainhead{
+  margin:30px;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  font-weight:lighter;
+}
+
+.chiffres{
+  text-align: center;
+}
+
+.headchiffre{
+  border: 1px solid ;
+  border-radius: 50%;
+  margin:30px;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  font-weight:lighter;
+}
+
+a{
+  text-decoration:none ;
+  color: #fff;
+}
+
+#source{
+  font-size: small;
+  font-style: italic;
+  display: block;
+  margin:10px;
+}
+
+p{
+  line-height: 135%;
+}
+
+#low {
+  max-width: 100%;
+  display: flex;
+  margin-top: 90px;
 }
 
