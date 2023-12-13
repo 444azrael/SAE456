@@ -225,3 +225,10 @@ body.transparent-navbar-padding {
   margin-right: auto;
   margin-left: auto;
 }
+
+h3 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
