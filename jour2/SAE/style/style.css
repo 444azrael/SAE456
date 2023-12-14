@@ -277,12 +277,6 @@ h1 {
   }
 }  
 
-#anneaux{
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw;
-}
-
-
 /* Style initial pour l'anneau bleu */
 .ring-blue {
   top: 40%;
