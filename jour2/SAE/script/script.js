@@ -5,15 +5,7 @@ $(document).ready(function () {
     $('.parallax').css('background-position-y', -(scrollTop * 0.3) + 'px');
   });
 
-  window.addEventListener('scroll', function () {
-    var navbar = document.querySelector('.navbar');
 
-    if (scrollTop === 0) {
-      navbar.classList.add('fixed-top', 'transparent-bg');
-    } else {
-      navbar.classList.remove('fixed-top', 'transparent-bg');
-    }
-  });
 
   // Vérification des permissions lors du chargement de la page
   var userType = getQueryParam('type');
@@ -25,6 +17,17 @@ $(document).ready(function () {
       event.preventDefault();
       validateLogin();
     });
+  }
+});
+
+
+window.addEventListener('scroll', function () {
+  var navbar = document.querySelector('.navbar');
+  var scrollTop = window.scrollY;
+  if (scrollTop === 0) {
+    navbar.classList.add('fixed-top', 'transparent-bg');
+  } else {
+    navbar.classList.remove('fixed-top', 'transparent-bg');
   }
 });
 
