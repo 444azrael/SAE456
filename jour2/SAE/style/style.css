@@ -387,7 +387,7 @@ h3 {
 }
 
 .mainhead{
-  margin:30px;
+  margin:5%;
   text-align: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 35px;
@@ -401,7 +401,7 @@ h3 {
 .headchiffre{
   border: 1px solid ;
   border-radius: 50%;
-  margin:30px;
+  margin:5%;
   text-align: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 35px;
@@ -417,7 +417,24 @@ a{
   font-size: small;
   font-style: italic;
   display: block;
-  margin:10px;
+  margin:2%;
+}
+
+p{
+  line-height: 135%;
+}
+
+#low {
+  max-width: 100%;
+  display: flex;
+  margin-top: 25%;
+}
+
+.introduction{
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+  margin:5%;
 }
 
 p{
