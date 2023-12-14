@@ -272,7 +272,7 @@ h1 {
   }
 }
 @media (min-width: 1024px) {
-  h1, .cache, .navbar-nav.vertical-dropdown {
+  h1, .navbar-nav.vertical-dropdown {
     display: none;
   }
 }  
