@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-/* Global Styles */
+
 body {
   background-color: #333;
   color: #fff;
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: justify;
 }
 
-/* Header Styles */
+
 header {
   position: relative;
   color: #ffff;
@@ -38,7 +38,7 @@ header {
   top: -10px;
 }
 
-/* Navbar Styles */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -80,34 +80,35 @@ body.transparent-navbar-padding {
 
 }
 
-/* Styles pour les éléments de la navbar en bleu au survol sauf ceux avec la classe connexion */
+
 .navbar-nav .nav-item:not(.connexion) a.nav-link:hover {
-  color: lightblue; /* Couleur au survol */
+  color: lightblue; 
 }
 
-/* Styles pour les éléments de la navbar avec la classe active en bleu */
+
 .navbar-nav .nav-item:not(.connexion).active a.nav-link {
   color: blue;
 }
-/* Ajoutez cette règle pour définir la position du menu déroulant */
+
+
 .navbar-nav.vertical-dropdown {
   position: fixed;
   top: 0;
-  left: -250px; /* Déplace le menu hors de la vue initiale */
+  left: -250px; 
   width: 250px;
-  height: 100vh; /* Hauteur de la fenêtre visible */
-  background-color: #343a40; /* Couleur du fond du menu déroulant */
-  z-index: 1000; /* Valeur arbitraire pour être au-dessus des autres éléments */
-  overflow-y: auto; /* Ajoute une barre de défilement si le contenu est trop long */
-  transition: left 0.3s ease; /* Ajoute une transition pour une animation fluide */
+  height: 100vh; 
+  background-color: #343a40; 
+  z-index: 1000; 
+  overflow-y: auto;
+  transition: left 0.3s ease; 
 }
 
-/* Appliquez cette règle lorsque le menu est ouvert */
+
 .navbar-nav.vertical-dropdown.show {
   left: 0;
 }
 
-/* Parallax Section Styles */
+
 .parallax {
   background-image: url('background-image.jpg');
   background-attachment: fixed;
@@ -138,7 +139,6 @@ body.transparent-navbar-padding {
 }
 
 
-/* Footer Styles */
 .footer {
   text-align: center;
   color: white;
@@ -157,7 +157,7 @@ body.transparent-navbar-padding {
   text-align: center;
 }
 
-/* Additional Styles */
+
 .blue-border {
   border: blue solid 2px;
   padding: 5px;
@@ -174,7 +174,7 @@ body.transparent-navbar-padding {
   text-decoration: underline;
 }
 
-/* Countdown Styles */
+
 .countdown-container {
   display: flex;
   justify-content: space-around;
@@ -197,13 +197,13 @@ body.transparent-navbar-padding {
   margin-top: 5px;
 }
 
-/* Responsive Image Styles */
+
 .responsive-image {
   max-width: 100%;
   display: flex;
 }
 
-/* Custom Heading Styles */
+
 h2 {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
@@ -223,12 +223,12 @@ h1 {
   z-index: 2; /* Assurer que le titre est au-dessus des anneaux */
 }
 
-/* Custom Text Styles */
+
 .textebienvenue {
   margin-left: 4%;
 }
 
-/* Dark Mode Styles */
+
 .noir {
   color: black;
 }
@@ -237,13 +237,13 @@ h1 {
   color : red !important;
 }
 
-/*Anneaux JO*/
+
 .olympic-ring {
   position: absolute;
   width: 200px;
-  height: 200px; /* Taille de l'anneau */
+  height: 200px; 
   border-radius: 50%;
-  border: 10px solid transparent; /* Bordure transparente */
+  border: 10px solid transparent; 
 }
 
 .olympic-ring.nav-link {
@@ -277,55 +277,55 @@ h1 {
   }
 }  
 
-/* Style initial pour l'anneau bleu */
+
 .ring-blue {
   top: 40%;
   left: 27%;
   border-color: #007bff;
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  width: 15vw; 
+  height: 15vw; 
 }
 
-/* Style initial pour l'anneau noir */
+
 .ring-black {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-color: #000;
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  width: 15vw; 
+  height: 15vw;
 }
 
-/* Style initial pour l'anneau rouge */
+
 .ring-red {
   top: 40%;
   left: 58%;
   border-color: #dc3545;
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  width: 15vw; 
+  height: 15vw; 
 }
 
-/* Style initial pour l'anneau jaune */
+
 .ring-yellow {
   top: 50%;
   left: 35%;
   border-color: #ffc107;
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  width: 15vw; 
+  height: 15vw; 
 }
 
-/* Style initial pour l'anneau vert */
+
 .ring-green {
   top: 50%;
   left: 50%;
   border-color: #28a745;
-  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
-  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  width: 15vw; 
+  height: 15vw; 
 }
 
 
 .olympic-ring.nav-link {
-  cursor: pointer; /* Définir le curseur pour indiquer que l'élément est cliquable */
+  cursor: pointer; 
 }
 
 .olympic-ring.nav-link:after {
@@ -335,30 +335,30 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1; /* Initialement invisible */
-  transition: opacity 0.3s ease; /* Ajouter une transition d'opacité pour un effet de fondu */
-  pointer-events: none; /* Éviter que le texte interfère avec les événements de la souris */
+  transition: opacity 0.3s ease; 
+  pointer-events: none;
 }
 
 
 
-/* Correction des transitions au survol */
+
 .ring-clickable {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 .ring-blue:hover {
-  transform: scale(1.5) translate(-100px, -100px); /* Correction des valeurs de translation */
+  transform: scale(1.5) translate(-100px, -100px); 
 }
 
 .ring-red:hover {
-  transform: scale(1.5) translate(100px, -100px); /* Correction des valeurs de translation */
+  transform: scale(1.5) translate(100px, -100px); /
 }
 
 .ring-green:hover {
   transform: scale(1.5) translate(100px, 100px);
 }
 
-/* Ajout d'une transition pour l'anneau jaune */
+
 .ring-yellow:hover {
   transform: scale(1.5) translate(-100px, 100px);
 }
@@ -383,7 +383,7 @@ h1 {
   opacity: 1;
 }
 
-/*regler la taille des images du carousel*/
+
 .carousel-size{
   max-width:80%;
   display:block;
@@ -448,15 +448,6 @@ p{
   margin:5%;
 }
 
-p{
-  line-height: 135%;
-}
-
-#low {
-  max-width: 100%;
-  display: flex;
-  margin-top: 90px;
-}
 
 .container {
   border-radius: 10%;
