@@ -277,19 +277,29 @@ h1 {
   }
 }  
 
+#anneaux{
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw;
+}
+
+
 /* Style initial pour l'anneau bleu */
 .ring-blue {
   top: 40%;
   left: 27%;
   border-color: #007bff;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
 /* Style initial pour l'anneau noir */
 .ring-black {
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centre horizontalement et verticalement */
+  transform: translate(-50%, -50%);
   border-color: #000;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
 /* Style initial pour l'anneau rouge */
@@ -297,6 +307,8 @@ h1 {
   top: 40%;
   left: 58%;
   border-color: #dc3545;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
 /* Style initial pour l'anneau jaune */
@@ -304,6 +316,8 @@ h1 {
   top: 50%;
   left: 35%;
   border-color: #ffc107;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
 /* Style initial pour l'anneau vert */
@@ -311,7 +325,10 @@ h1 {
   top: 50%;
   left: 50%;
   border-color: #28a745;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
+
 
 .olympic-ring.nav-link {
   cursor: pointer; /* Définir le curseur pour indiquer que l'élément est cliquable */
