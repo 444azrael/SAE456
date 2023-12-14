@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Paris 2024 | Connexion</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="icon" href="img/logo.png">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -14,86 +15,142 @@
 </head>
 <body>
      <!-- Header avec effet de parallaxe -->
-    <header class="parallax" data-speed="0.5">
- <!-- Navbar -->
- 
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand">
-      <img src="img/logo.png" alt="Logo Lisieux JO 2024" class="header-logo">
-      <span class="brand-text">Lisieux JO 2024</span>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-              <a class="nav-link" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="presentation.html">Paris 2024</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Impact des JO 2024</a>
-              <div class="dropdown-menu dropdown-menu-second" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
-                  <a class="dropdown-item" href="impact.html">Environnement et Climat</a>
-                  <a class="dropdown-item" href="impact_individus.html">Individus</a>
-              </div>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="faq.html">F.A.Q</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="financement.html">Financement</a>
-          </li>
-          
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Formulaire
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="questionnaire_mairie.html">Mairies</a>
-                  <a class="dropdown-item" href="questionnaire_habitant.html">Habitant</a>
-                  <a class="dropdown-item" href="questionnaire_entreprise.html">Entreprises</a>
-                  <a class="dropdown-item" href="questionnaire_association.html">Associations</a>
-              </div>
-          </li>
-          <li class="nav-item active">
-              <a class="nav-link connexion active" href="connexion.html">Connexion</a>
-          </li>
-      </ul>
-  </div>
-</nav>
-  <h1 class="parallax-header"> Connexion </h1>
-    </header>
-    <!-- Contenu de la page -->
-    <main>
-        <div class="container mt-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-header"><p class="noir">Connexion</p></div>
-                <div class="card-body">
-                  <form id="loginForm">
-                    <div class="form-group">
-                      <label class="noir" for="username">Identifiant:</label>
-                      <input type="text" class="form-control" id="username" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="password" class="noir">Mot de passe:</label>
-                      <input type="password" class="form-control" id="password" required>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="validateLogin()">Se connecter</button>
-                  </form>
-                </div>
-              </div>
-            </div>
+     <header class="parallax parallax-header" data-speed="0.5">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand">
+              <img src="img/logo.png" alt="Logo Lisieux JO 2024" class="header-logo">
+              <span class="brand-text">Lisieux JO 2024</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <!-- Ajoutez vos liens de navigation ici -->
+                  <li class="nav-item active">
+                      <a class="nav-link cache" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cache" href="presentation.html">Paris 2024</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Impact des JO 2024</a>
+                      <div class="dropdown-menu dropdown-menu-second" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
+                          <a class="dropdown-item" href="impact.html">Environnement et Climat</a>
+                          <a class="dropdown-item" href="impact_individus.html">Individus</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cache" href="faq.html">F.A.Q</a>
+                  </li>
+                  <li class="nav-item cache">
+                      <a class="nav-link" href="financement.html">Financement</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Formulaire
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="questionnaire_mairie.html">Mairies</a>
+                          <a class="dropdown-item" href="questionnaire_habitant.html">Habitant</a>
+                          <a class="dropdown-item" href="questionnaire_entreprise.html">Entreprises</a>
+                          <a class="dropdown-item" href="questionnaire_association.html">Associations</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link connexion" href="connexion.html">Connexion</a>
+                  </li>
+              </ul>
           </div>
+      </nav>
+      <!-- Votre contenu de la page ici -->
+      <span class="olympic-ring ring-black"></span>
+      <span class="olympic-ring ring-yellow nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-blue nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-green nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-red nav-link ring-clickable"></span>
+      <!-- Contenu de la page -->
+      <h1>Accueil</h1>
+  </header>
+    <!-- Contenu de la page -->
+          <main>
+    <div class="container mt-3">
+        <!--Impact économique-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="img/impact_economique.jpg" alt="impact économique"></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h2 class="text-white">Impact économique des Jeux Olympiques de 2024</h2>
+                            <br>
+                            <p class="mb-0 text-white-50">L'organisation et le déroulement de ces JO vont avoir un fort impact sur l'économie de notre pays.
+                                En effet, cet évènement requiert le déploiement d'une importante quantité de ressources logistiques, financières, et humaines. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     <div class="container mt-5">
+        <!--Impact écologique-->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="img/impact_ecologique.jpg" alt="impact écologique"></div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h2 class="text-white">Impact écologique des Jeux Olympiques de 2024</h2>
+                            <br>
+                            <p class="mb-0 text-white-50">L'organisation des JO de Paris va avoir un impact indéniable sur l'écologie et notre environnement.
+                                En effet, les JO vont nécessiter la construction de nouveaux bâtiments, de nouvelles infrastructures, et de nouveaux équipements sportifs.
+                                Cela va donc avoir un impact sur la biodiversité, la pollution, et la consommation d'énergie.
+                                De même, il faudra s'efforcer d'être vigilant vis-à-vis de la gestion des déchets, afin de limiter la pollution des sols.
+                                Aussi, il faudra veiller à ce que les transports en commun soient privilégiés, afin de limiter la pollution atmosphérique; il est bien connu que ce genre
+                                d'évènement est propice à l'augmentation du trafic routier, et donc à la pollution de l'air.
+                                <br>
+                                Cependant, nous aspirons à ce que ces JO soient les plus écologiques possibles, et nous nous efforcerons de mettre en place des mesures pour limiter l'impact écologique de cet évènement.
+                                Notamment, nous nous efforcerons de limiter autant que faire se peut l'empreinte carbone des JO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--Impact écologique pt.2-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="col-lg-6"><img class="img-fluid" src="img/wwf.jpg" alt="Logo wwf"></div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h2 class="text-white">La question environnementale au centre du débat</h2>
+                            <br>
+                            <p class="mb-0 text-white-50">Soucieux de l'environnement, les JO de 2024 ont décidé de s'engager dans diverses démarches, notamment des partenariats.
+                                C'est le cas de la collaboration entre les JO et l'association WWF, militante pour l'écologie.
+                                Au travers de ce partenariat, nous avons pu définir des stratégies et objectifs quant à l'amélioration de l'organisation des JO par rapport aux éditions précédentes.
+                                <br><br>
+                                Nous avons ainsi pris de multiples initiatives, en voici quelques unes :
+                                <br>
+                                - Réduction drastique des émissions de CO2 par rapport aux éditions précédentes
+                                <br>
+                                - Favoriser l'accès aux sites des épreuves par les transports en commun    
+                                <br>
+                                - Garantir un approvisionnement en énergies renouvelables
+                                <br>
+                                - Fournir une alimentation de qualité et durable, issue de l'agriculture biologique par les divers distributeurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
     <div class="carousel-size">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -143,8 +200,7 @@
       </div> 
     </div>
     </div>
-      </main>
-
+  </main>
     <!-- Footer -->
     <footer class="bg-dark text-light p-3 text-center mt-5 footer">
         <div class="container footer-content">

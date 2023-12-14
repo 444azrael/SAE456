@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <title> Paris 2024 | Présentation </title>
+   <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -14,78 +15,79 @@
 </head>
 <body>
     <!-- Header avec effet de parallaxe -->
-<header class="parallax" data-speed="0.5">
-       <!-- Navbar -->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand">
-            <img src="img/logo.png" alt="Logo Lisieux JO 2024" class="header-logo">
-            <span class="brand-text">Lisieux JO 2024</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="presentation.html">Paris 2024</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Impact des JO 2024</a>
-                    <div class="dropdown-menu dropdown-menu-second" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
-                        <a class="dropdown-item" href="impact.html">Environnement et Climat</a>
-                        <a class="dropdown-item" href="impact_individus.html">Individus</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">F.A.Q</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="financement.html">Financement</a>
-                </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Formulaire
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="questionnaire_mairie.html">Mairies</a>
-                        <a class="dropdown-item" href="questionnaire_habitant.html">Habitant</a>
-                        <a class="dropdown-item" href="questionnaire_entreprise.html">Entreprises</a>
-                        <a class="dropdown-item" href="questionnaire_association.html">Associations</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link connexion" href="connexion.html">Connexion</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-  <h1> Paris 2024</h1>
-    </header>
+    <header class="parallax parallax-header" data-speed="0.5">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand">
+              <img src="img/logo.png" alt="Logo Lisieux JO 2024" class="header-logo">
+              <span class="brand-text">Lisieux JO 2024</span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <!-- Ajoutez vos liens de navigation ici -->
+                  <li class="nav-item active">
+                      <a class="nav-link cache" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cache" href="presentation.html">Paris 2024</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Impact des JO 2024</a>
+                      <div class="dropdown-menu dropdown-menu-second" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
+                          <a class="dropdown-item" href="impact.html">Environnement et Climat</a>
+                          <a class="dropdown-item" href="impact_individus.html">Individus</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link cache" href="faq.html">F.A.Q</a>
+                  </li>
+                  <li class="nav-item cache">
+                      <a class="nav-link" href="financement.html">Financement</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Formulaire
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="questionnaire_mairie.html">Mairies</a>
+                          <a class="dropdown-item" href="questionnaire_habitant.html">Habitant</a>
+                          <a class="dropdown-item" href="questionnaire_entreprise.html">Entreprises</a>
+                          <a class="dropdown-item" href="questionnaire_association.html">Associations</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link connexion" href="connexion.html">Connexion</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- Votre contenu de la page ici -->
+      <span class="olympic-ring ring-black"></span>
+      <span class="olympic-ring ring-yellow nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-blue nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-green nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-red nav-link ring-clickable"></span>
+      <!-- Contenu de la page -->
+      <h1>Accueil</h1>
+  </header>
     <!-- Contenu de la page -->
        <main>
       <div class="container mt-5">
-        <h1 class="mainhead">Paris 2024</h1>
-        <article>
-          <p class="introduction">Les Jeux Olympiques de Paris 2024 promettent d'être bien plus qu'une simple compétition sportive. 
-            Ils nous offriront un spectacle inoubliable, mêlant performances athlétiques exceptionnelles, diversité culturelle et héritage durable.
-             Aujourd'hui, nous allons explorer ensemble les facettes extraordinaires de cet événement, où la passion du sport se conjugue avec l'esprit olympique pour créer une célébration inégalée de l'humanité. 
-             Bienvenue à cette présentation dédiée à l'excellence, à la diversité et à l'héritage des Jeux Olympiques de Paris 2024.
-          </p>
-        </article>
       <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-        <div class="col-lg-6"><img class="img-fluid mt-3" src="img/Presentation.png" alt="Image de presentation 1" /></div>
+        <div class="col-lg-6"><img class="img-fluid mt-3" src="img/Presentation.png" alt="Image de presentation 1"></div>
         <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
                     <div class="project-text w-100 my-auto text-center text-lg-left">
-                      <h2>Présentation </h2>
+                      <h2>Paris 2024 </h2>
                       <p>En 2024, Paris et la France accueilleront les premiers Jeux Paralympiques d’été de leur histoire. 
                         Paris 2024 voit les choses en grand et réinvente la cérémonie d’ouverture en la sortant du cadre d’un stade traditionnel. Le 28 août 2024 à 20h (à confirmer), 
                         la Place de la Concorde et les Champs-Elysées serviront d’écrin à cette célébration sans précédent au cœur de la ville.
@@ -101,7 +103,7 @@
         </div>
     </div>
     <div class="row gx-0 justify-content-center">
-        <div class="col-lg-6"><img class="img-fluid mt-5" src="img/Presentation2.png" alt="Image de presentation 2" /></div>
+        <div class="col-lg-6"><img class="img-fluid mt-5" src="img/Presentation2.png" alt="Image de presentation 2"></div>
         <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
                 <div class="d-flex h-100">
@@ -174,8 +176,6 @@
     </div>
     </div>
   </main>
-
-
     <!-- Footer -->
     <footer class="bg-dark text-light p-3 text-center mt-5 footer">
         <div class="container footer-content">
@@ -185,10 +185,7 @@
             <a href="https://www.paris2024.org/fr/" class="text-light" target="_blank"><i class="fas fa-globe"></i></a>
             <h4>© 2024-PARIS 2024. Tous droits réservés.</h4>
             <a href="https://www.paris2024.org/fr/mentions-legales/" class="text-light" target="_blank"><i class="fas fa-globe"></i></a>
-            <p class="student-signature">Cadiou Baptiste 1A TP1.2</p>
         </div>
     </footer>
   </body>
 </html>
-
-
