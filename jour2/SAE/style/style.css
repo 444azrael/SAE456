@@ -254,12 +254,12 @@ h1 {
   display: none;
 }
 
-.olympic-ring.nav-link:after {
+.olympic-.nav-link:after {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.olympic-ring.nav-link:hover:after {
+.olympic-.nav-link:hover:after {
   opacity: 1;
 }
 
@@ -278,49 +278,55 @@ h1 {
 }  
 
 
+/* Style initial pour l'anneau bleu */
 .ring-blue {
   top: 40%;
   left: 27%;
+  filter: drop-shadow(0 -6mm 4mm #007bff);
   border-color: #007bff;
-  width: 15vw; 
-  height: 15vw; 
-}
-
-
-.ring-black {
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-color: #000;
-  width: 15vw; 
+  width: 15vw;
   height: 15vw;
 }
 
+/* Style initial pour l'anneau noir */
+.ring-black {
+  top: 55%;
+  left: 50%;
+  filter: drop-shadow(0 -6mm 4mm #000);
+  transform: translate(-50%, -50%);
+  border-color: #000;
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+}
 
+/* Style initial pour l'anneau rouge */
 .ring-red {
   top: 40%;
   left: 58%;
+  filter: drop-shadow(0 -6mm 4mm #dc3545);
   border-color: #dc3545;
-  width: 15vw; 
-  height: 15vw; 
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
-
+/* Style initial pour l'anneau jaune */
 .ring-yellow {
   top: 50%;
   left: 35%;
+  filter: drop-shadow(0 -6mm 4mm #ffc107);
   border-color: #ffc107;
-  width: 15vw; 
-  height: 15vw; 
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
-
+/* Style initial pour l'anneau vert */
 .ring-green {
   top: 50%;
   left: 50%;
+  filter: drop-shadow(0 -6mm 4mm #28a745);
   border-color: #28a745;
-  width: 15vw; 
-  height: 15vw; 
+  width: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
+  height: 15vw; /* Ajustez la taille en fonction de la largeur de l'écran */
 }
 
 
