@@ -1,272 +1,377 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paris 2024 | F.A.Q </title>
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paris 2024 | F.A.Q</title>
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
     <script src="script/script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header avec effet de parallaxe -->
     <header class="parallax parallax-header" data-speed="0.5">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand">
-                <img src="img/logo.png" alt="Logo Lisieux JO 2024" class="header-logo">
-                <span class="brand-text">Lisieux JO 2024</span>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <!-- Ajoutez vos liens de navigation ici -->
-                    <li class="nav-item ">
-                        <a class="nav-link cache" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link cache" href="presentation.html">Paris 2024</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Impact des JO 2024</a>
-                        <div class="dropdown-menu dropdown-menu-second" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
-                            <a class="dropdown-item" href="impact.html">Environnement et Climat</a>
-                            <a class="dropdown-item" href="impact_individus.html">Individus</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link cache" href="faq.html">F.A.Q</a>
-                    </li>
-                    <li class="nav-item cache">
-                        <a class="nav-link" href="financement.html">Financement</a>
-                    </li>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand">
+          <img
+            src="img/logo.png"
+            alt="Logo Lisieux JO 2024"
+            class="header-logo"
+          />
+          <span class="brand-text">Lisieux JO 2024</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <!-- Ajoutez vos liens de navigation ici -->
+            <li class="nav-item">
+              <a class="nav-link cache" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cache" href="presentation.html">Paris 2024</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Impact des JO 2024</a
+              >
+              <div
+                class="dropdown-menu dropdown-menu-second"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="impact_emploi.html">Emploi</a>
+                <a class="dropdown-item" href="impact.html"
+                  >Environnement et Climat</a
+                >
+                <a class="dropdown-item" href="impact_individus.html"
+                  >Individus</a
+                >
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link cache" href="faq.html">F.A.Q</a>
+            </li>
+            <li class="nav-item cache">
+              <a class="nav-link" href="financement.html">Financement</a>
+            </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Formulaire
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="questionnaire_mairie.html">Mairies</a>
-                            <a class="dropdown-item" href="questionnaire_habitant.html">Habitant</a>
-                            <a class="dropdown-item" href="questionnaire_entreprise.html">Entreprises</a>
-                            <a class="dropdown-item" href="questionnaire_association.html">Associations</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="Statistiques.html">Statistiques</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link connexion" href="connexion.html">Connexion</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Votre contenu de la page ici -->
-        <span class="olympic-ring ring-black"></span>
-        <span class="olympic-ring ring-yellow nav-link ring-clickable"></span>
-        <span class="olympic-ring ring-blue nav-link ring-clickable"></span>
-        <span class="olympic-ring ring-green nav-link ring-clickable"></span>
-        <span class="olympic-ring ring-red nav-link ring-clickable"></span>
-        <!-- Contenu de la page -->
-        <h1>Accueil</h1>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Formulaire
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="questionnaire_mairie.html"
+                  >Mairies</a
+                >
+                <a class="dropdown-item" href="questionnaire_habitant.html"
+                  >Habitant</a
+                >
+                <a class="dropdown-item" href="questionnaire_entreprise.html"
+                  >Entreprises</a
+                >
+                <a class="dropdown-item" href="questionnaire_association.html"
+                  >Associations</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Statistiques.html">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link connexion" href="connexion.html">Connexion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Votre contenu de la page ici -->
+      <span class="olympic-ring ring-black"></span>
+      <span class="olympic-ring ring-yellow nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-blue nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-green nav-link ring-clickable"></span>
+      <span class="olympic-ring ring-red nav-link ring-clickable"></span>
+      <!-- Contenu de la page -->
+      <h1>Accueil</h1>
     </header>
     <!-- Contenu de la page -->
     <main>
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Questions Fréquemment Posées</h2>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Questions Fréquemment Posées</h2>
 
-            <!-- Accordion pour les questions et réponses -->
-            <div id="faqAccordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-
-                                Quand auront lieu les JO 2024 à Paris?
-
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <P>
-                                Les Jeux Olympiques de 2024 à Paris auront lieu du 26 juillet au 11 août.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-
-                                Comment puis-je participer en tant qu'entreprise aux événements liés aux JO à
-                                Lisieux?
-
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <P>
-                                Pour participer en tant qu'entreprise, veuillez remplir le formulaire dédié aux
-                                entreprises
-                                dans la section "Formulaire" de notre site.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-                <!-- Question 3 -->
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-
-                                Comment puis-je savoir si ma mairie organise des déplacements pour les Jeux
-                                Olympiques
-                                2024 ?
-
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <P>
-                                Vous pouvez consulter la liste des communes participantes sur notre site ou contacter
-                                directement votre mairie pour obtenir des informations.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-
-                                Comment faire pour accéder à mon formulaire spécifique?
-
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <P>
-                                Vous devez vous connecter avec votre identifiant et mot de passe envoyés par courrier,
-                                une fois la connexion établit le site vous enverra directement vers le questionnaire
-                                dédié.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                                aria-expanded="false" aria-controls="collapseFive">
-
-                                Les épreuves, elles auront lieu où ?
-
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <p>
-                                Les épreuves se dérouleront pour la plupart en région parisienne. L'emblématique Stade
-                                de
-                                France accueillera
-                                les cérémonies d'ouverture et de clôture ainsi que les épreuves d'athlétisme. Le Parc
-                                des
-                                Princes sera l'un des stades consacrés au football.
-                                Son voisin, le stade Jean-Bouin, sera lui l'antre du rugby à sept, alors que l'Arena 92
-                                de
-                                Nanterre (Hauts-de-Seine)
-                                abritera les compétitions d'haltérophilie, de gymnastique et de trampoline.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingSix">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
-                                aria-expanded="false" aria-controls="collapseSix">
-
-                                Et après 2024, on en fera quoi de toutes les installations olympiques ?
-
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
-                        <div class="card-body noir">
-                            <p>
-                                Le comité d'organisation veut capitaliser sur des complexes sportifs qui existent déjà :
-                                Roland-Garros par exemple pour la boxe, Bercy pour le judo et la lutte. Les stades où
-                                auront
-                                lieu les épreuves de football ont été construits, pour certains d'entre eux, pour l'Euro
-                                2016.
-                                L'Arena 92, future antre du Racing 92 à Nanterre, sera aussi mobilisée. Paris 2024
-                                insiste aussi
-                                sur la pérennisation des nouvelles installations. Le village olympique laissera place à
-                                des
-                                appartements qui seront ensuite loués ou vendus. Seul un centre aquatique, pour les
-                                épreuves de
-                                natation, sera construit à côté du Stade de France.
-                                <br>
-                                <br>
-                                Objectif : éviter le désastre de certaines olympiades passées, où certains sites
-                                construits
-                                ex-nihilo ont rapidement été abandonnés. Quelques mois seulement après les JO de Rio
-                                2016, la
-                                piscine olympique est déjà vide et délabrée. A Pékin, le parcours de kayaking des
-                                Olympiades de
-                                2008 est désormais à sec. A Athènes, les gradins du stade de hockey sont envahis par la
-                                végétation, 13 ans après les JO. A Sarajevo, les pistes de bobsleigh utilisées en 1984
-                                sont
-                                abandonnées.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Accordion pour les questions et réponses -->
+        <div id="faqAccordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Quand auront lieu les JO 2024 à Paris?
+                </button>
+              </h5>
             </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Les Jeux Olympiques de 2024 à Paris auront lieu du 26 juillet
+                  au 11 août.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Comment puis-je participer en tant qu'entreprise aux
+                  événements liés aux JO à Lisieux?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Pour participer en tant qu'entreprise, veuillez remplir le
+                  formulaire dédié aux entreprises dans la section "Formulaire"
+                  de notre site.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Question 3 -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Comment puis-je savoir si ma mairie organise des déplacements
+                  pour les Jeux Olympiques 2024 ?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Vous pouvez consulter la liste des communes participantes sur
+                  notre site ou contacter directement votre mairie pour obtenir
+                  des informations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Comment faire pour accéder à mon formulaire spécifique?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Vous devez vous connecter avec votre identifiant et mot de
+                  passe envoyés par courrier, une fois la connexion établit le
+                  site vous enverra directement vers le questionnaire dédié.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Les épreuves, elles auront lieu où ?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Les épreuves se dérouleront pour la plupart en région
+                  parisienne. L'emblématique Stade de France accueillera les
+                  cérémonies d'ouverture et de clôture ainsi que les épreuves
+                  d'athlétisme. Le Parc des Princes sera l'un des stades
+                  consacrés au football. Son voisin, le stade Jean-Bouin, sera
+                  lui l'antre du rugby à sept, alors que l'Arena 92 de Nanterre
+                  (Hauts-de-Seine) abritera les compétitions d'haltérophilie, de
+                  gymnastique et de trampoline.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Et après 2024, on en fera quoi de toutes les installations
+                  olympiques ?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseSix"
+              class="collapse"
+              aria-labelledby="headingSix"
+              data-parent="#faqAccordion"
+            >
+              <div class="card-body noir">
+                <p>
+                  Le comité d'organisation veut capitaliser sur des complexes
+                  sportifs qui existent déjà : Roland-Garros par exemple pour la
+                  boxe, Bercy pour le judo et la lutte. Les stades où auront
+                  lieu les épreuves de football ont été construits, pour
+                  certains d'entre eux, pour l'Euro 2016. L'Arena 92, future
+                  antre du Racing 92 à Nanterre, sera aussi mobilisée. Paris
+                  2024 insiste aussi sur la pérennisation des nouvelles
+                  installations. Le village olympique laissera place à des
+                  appartements qui seront ensuite loués ou vendus. Seul un
+                  centre aquatique, pour les épreuves de natation, sera
+                  construit à côté du Stade de France.
+                  <br />
+                  <br />
+                  Objectif : éviter le désastre de certaines olympiades passées,
+                  où certains sites construits ex-nihilo ont rapidement été
+                  abandonnés. Quelques mois seulement après les JO de Rio 2016,
+                  la piscine olympique est déjà vide et délabrée. A Pékin, le
+                  parcours de kayaking des Olympiades de 2008 est désormais à
+                  sec. A Athènes, les gradins du stade de hockey sont envahis
+                  par la végétation, 13 ans après les JO. A Sarajevo, les pistes
+                  de bobsleigh utilisées en 1984 sont abandonnées.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-light p-3 text-center mt-5 footer">
-        <div class="container footer-content">
-            <h4>Nous Contacter :</h4>
-            <a href="https://twitter.com/Paris2024" class="text-light mr-3" target="_blank"><i
-                    class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/paris2024/" class="text-light mr-3" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.paris2024.org/fr/" class="text-light" target="_blank"><i class="fas fa-globe"></i></a>
-            <h4>© 2024-PARIS 2024. Tous droits réservés.</h4>
-            <a href="https://www.paris2024.org/fr/mentions-legales/" class="text-light" target="_blank"><i
-                    class="fas fa-globe"></i></a>
-            <p class="student-signature">Lazare Louis 1A TP1.1</p>
-            <p class="student-signature">Gaudre Soren 1A TP1.2</p>
-        </div>
+      <div class="container footer-content">
+        <h4>Nous Contacter :</h4>
+        <a
+          href="https://twitter.com/Paris2024"
+          class="text-light mr-3"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/paris2024/"
+          class="text-light mr-3"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.paris2024.org/fr/"
+          class="text-light"
+          target="_blank"
+          ><i class="fas fa-globe"></i
+        ></a>
+        <h4>© 2024-PARIS 2024. Tous droits réservés.</h4>
+        <a
+          href="https://www.paris2024.org/fr/mentions-legales/"
+          class="text-light"
+          target="_blank"
+          ><i class="fas fa-globe"></i
+        ></a>
+        <p class="student-signature">Lazare Louis 1A TP1.1</p>
+        <p class="student-signature">Gaudre Soren 1A TP1.2</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
