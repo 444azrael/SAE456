@@ -276,3 +276,50 @@ p{
   margin-top: 90px;
 }
 
+
+
+.cout{
+  border: solid black 1px;
+  background-color: #474545;
+  padding: 5%;
+  border-radius: 13%;
+}
+
+.titrefinance{
+  border: solid black 1px;
+  background-color: #474545;
+  padding: 5%;
+  border-radius: 13%;
+}
+hr{
+  border: solid black 1px;
+  margin-right: 9%;
+  text-align: center;
+}
+
+.listedroite{
+  margin-left: 10%;
+  margin-top: 10%;
+  max-width: 100%;
+}
+
+.listedroite > li {
+  margin-top: 7%;
+}
+
+.mascottes{
+  width: 60%;
+  margin-left: 20%;
+  
+}
+
+.imagecourt{
+  width: 50%;
+  margin-top: 15%;
+  margin-left: 15%;
+}
+
+.textedroite{
+  margin-top: 20%;
+}
+
